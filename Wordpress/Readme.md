@@ -1,6 +1,7 @@
 
 # Instalacion de WordPress en Ubuntu 22.04 LTS
-=================================
+
+-------------------
 Este documento proporciona una guía paso a paso para instalar WordPress en un servidor Ubuntu 22.04 LTS. WordPress es un sistema de gestión de contenido (CMS) popular que permite crear y administrar sitios web fácilmente.
 Requisitos previos
 -------------------
