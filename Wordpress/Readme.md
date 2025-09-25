@@ -14,6 +14,11 @@ Antes de comenzar, asegúrate de tener lo siguiente:
 - MySQL o MariaDB.
 - Acceso a la terminal o SSH.
 
+----------------------------
+# En caso de que no tengas nada instalado, sigue estos pasos, para asi poder tener lo minimo:
+
+
+
 -----------------------------
 ## Paso 1: Actualizar el sistema
 -----------------------------
