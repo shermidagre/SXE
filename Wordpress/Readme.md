@@ -62,26 +62,30 @@ sudo systemctl restart mysql
 ## Paso 3: Instalar php para interpretar lenguajes de script
 -----------------------------
 
-![Ver video](https://youtu.be/ynWNmDkDOHQ)
+[![Miniatura del video](https://img.youtube.com/vi/ynWNmDkDOHQ/0.jpg)](https://youtu.be/ynWNmDkDOHQ)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
 sudo apt update && sudo apt upgrade 
-sudo apt install php libapache2-mod-php php-mysql
+sudo apt install php libapache2-mod-php
 sudo systemctl restart apache2
 sudo systemctl status apache2
 sudo nano /var/www/html/info.php para asi poder abrir el archivo y escribir 
+```
 Aqui dentro del archivo escribimos: Prueba<?php phpinfo();?> 
+
 Guardamos y salimos con ctrl + x y luego Y
+```bash
 Escribimos en el navegador para asi comprobar si funciona: http://localhost/info.php
 ```
+
 
 -----------------------------
 ## Paso 4: Instalar phpMyAdmin como interfaz grafica para gestionar MySQL
 -----------------------------
 
-[Ver video](https://youtu.be/T_JIIF7DvOM)
+[![Ver video(https://img.youtube.com/vi/T_JIIF7DvOM/0.jpg)]](https://youtu.be/T_JIIF7DvOM)
 
 ```bash
 sudo mysql_secure_installation
