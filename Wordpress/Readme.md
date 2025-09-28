@@ -85,7 +85,7 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/info
 ## Paso 4: Instalar phpMyAdmin como interfaz grafica para gestionar MySQL
 -----------------------------
 
-[![Ver video(https://img.youtube.com/vi/T_JIIF7DvOM/0.jpg)]](https://youtu.be/T_JIIF7DvOM)
+[![Miniatura del video](https://img.youtube.com/vi/T_JIIF7DvOM/0.jpg)](https://youtu.be/T_JIIF7DvOM)
 
 ```bash
 sudo mysql_secure_installation
@@ -131,7 +131,7 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpm
 ## Paso 5: Descargar e instalar WordPress
 -----------------------------
 
-[Ver](https://youtu.be/rCi40_MIWpc)
+[![Miniatura del video](https://img.youtube.com/vi/rCi40_MIWpc/0.jpg)](https://youtu.be/rCi40_MIWpc)
 
 ```bash
 cd /tmp
@@ -144,7 +144,7 @@ sudo chmod -R 755 /var/www/html/wordpress
 
 ### Separamos su configuracion en dos partes para que sea mas facil de entender
 
-[Ver video](https://youtu.be/NDX1tocnHxY)
+[![Miniatura del video](https://img.youtube.com/vi/NDX1tocnHxY/0.jpg)](https://youtu.be/NDX1tocnHxY)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
