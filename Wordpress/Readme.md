@@ -21,7 +21,7 @@ Requisitos previos
 ## Paso 1: Instalar Apache como servidor web
 -----------------------------
 
-[intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4](videos/intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4)
+![intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4](videos/intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -35,7 +35,7 @@ Escribe en el navegador para asi comprobar si funciona: http://localhost
 ## Paso 2: Instalar mysql como servidor de base de datos
 -----------------------------
 
-[Instalar mysql - Hecho con Clipchamp_1759056236552(1).mp4](Videos/Instalar%20mysql%20-%20Hecho%20con%20Clipchamp_1759056236552%281%29.mp4)
+![Instalar mysql - Hecho con Clipchamp_1759056236552(1).mp4](Videos/Instalar%20mysql%20-%20Hecho%20con%20Clipchamp_1759056236552%281%29.mp4)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -49,7 +49,7 @@ sudo systemctl restart mysql
 ## Paso 3: Instalar php para interpretar lenguajes de script
 -----------------------------
 
-[Instalar php - Hecho con Clipchamp_1759055070293(1).mp4](Videos/Instalar%20php%20-%20Hecho%20con%20Clipchamp_1759055070293%281%29.mp4)
+![Instalar php - Hecho con Clipchamp_1759055070293(1).mp4](Videos/Instalar%20php%20-%20Hecho%20con%20Clipchamp_1759055070293%281%29.mp4)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -68,7 +68,7 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/info
 ## Paso 4: Instalar phpMyAdmin como interfaz grafica para gestionar MySQL
 -----------------------------
 
-[instalar phpmyadmin - Hecho con Clipchamp_1759056482327(1).mp4](Videos/instalar%20phpmyadmin%20-%20Hecho%20con%20Clipchamp_1759056482327%281%29.mp4)
+![instalar phpmyadmin - Hecho con Clipchamp_1759056482327(1).mp4](Videos/instalar%20phpmyadmin%20-%20Hecho%20con%20Clipchamp_1759056482327%281%29.mp4)
 
 ```bash
 sudo mysql_secure_installation
@@ -97,11 +97,12 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpm
 # Ya tienes lo minimo para instalar WordPress
 -----------------------------
 
+
 -----------------------------
 ## Paso 5: Descargar e instalar WordPress
 -----------------------------
 
-[configuracion wordpress1 - Hecho con Clipchamp_1759056027531(1).mp4](Videos/configuracion%20wordpress1%20-%20Hecho%20con%20Clipchamp_1759056027531%281%29.mp4)
+![configuracion wordpress1 - Hecho con Clipchamp_1759056027531(1).mp4](Videos/configuracion%20wordpress1%20-%20Hecho%20con%20Clipchamp_1759056027531%281%29.mp4)
 
 ```bash
 cd /tmp
@@ -114,7 +115,7 @@ sudo chmod -R 755 /var/www/html/wordpress
 
 ### Separamos su configuracion en dos partes para que sea mas facil de entender
 
-[configuracion wordpress2 - Hecho con Clipchamp_1759055294187(1).mp4](Videos/configuracion%20wordpress2%20-%20Hecho%20con%20Clipchamp_1759055294187%281%29.mp4)
+![configuracion wordpress2 - Hecho con Clipchamp_1759055294187(1).mp4](Videos/configuracion%20wordpress2%20-%20Hecho%20con%20Clipchamp_1759055294187%281%29.mp4)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
