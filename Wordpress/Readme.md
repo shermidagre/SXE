@@ -30,8 +30,8 @@ Requisitos previos
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
-sudo apt update && sudo apt upgrade 
-sudo apt install apache2
+sudo apt update && sudo apt upgrade  # Actualizamos
+sudo apt install apache2 # Instalamos apache2
 Escribe en el navegador para asi comprobar si funciona: http://localhost
 ```
 
@@ -49,10 +49,10 @@ Escribe en el navegador para asi comprobar si funciona: http://localhost
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
-sudo apt update && sudo apt upgrade 
-sudo apt install mysql-server
-sudo systemctl status mysql
-sudo systemctl restart mysql
+sudo apt update && sudo apt upgrade # Actualizamos
+sudo apt install mysql-server # Instalamos mysql
+sudo systemctl status mysql # Comprobamos que mysql esta corriendo
+sudo systemctl restart mysql # Reiniciamos mysql para que tome los cambios
 ```
 -----------------------------
 ## Paso 3: Instalar php para interpretar lenguajes de script
@@ -66,10 +66,10 @@ sudo systemctl restart mysql
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
-sudo apt update && sudo apt upgrade 
-sudo apt install php libapache2-mod-php
-sudo systemctl restart apache2
-sudo systemctl status apache2
+sudo apt update && sudo apt upgrade  # Actualizamos
+sudo apt install php libapache2-mod-php # Instalamos php y el modulo para que apache pueda interpretar php
+sudo systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
+sudo systemctl status apache2 # Comprobamos que apache2 esta corriendo
 sudo nano /var/www/html/info.php # Para asi poder abrir el archivo y escribir 
 ```
 Aqui dentro del archivo escribimos: Prueba<?php phpinfo();?> 
@@ -92,32 +92,32 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/info
 ---
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 ```bash
-sudo mysql_secure_installation
+sudo mysql_secure_installation # Configuramos mysql 
 ```
 Aqui seguimos los pasos que nos indica, en el primero ponemos un 1 para establecer una contraseña de root
 Despues de esto, nos va a pedir que pongamos una contraseña, la ponemos y la confirmamos
 Despues nos va a hacer una serie de preguntas, a todas respondemos con algo random para skippearlas
 
 ```bash
-sudo mysql -u root -p
+sudo mysql -u root -p # Entramos a mysql
 ```
 
 Aqui nos va a pedir la contraseña que hemos puesto antes, la ponemos y entramos
 Creamos la base de datos para wordpress:
 
 ```bash
-CREATE DATABASE wordpress;
+CREATE DATABASE wordpress; # Creamos la base de datos
 ```
 Creamos un usuario y le damos permisos a la base de datos que acabamos de crear:
 ```bash
-CREATE USER 'usuario_wp'@'localhost' IDENTIFIED BY 'tu_contraseña_segura';
-GRANT ALL PRIVILEGES ON wordpress.* TO 'usuario_wp'@'localhost';
+CREATE USER 'usuario_wp'@'localhost' IDENTIFIED BY 'tu_contraseña_segura'; # Creamos un usuario
+GRANT ALL PRIVILEGES ON wordpress.* TO 'usuario_wp'@'localhost';  # Le damos permisos a la base de datos
 FLUSH PRIVILEGES;
 \q #para salir de mysql
 ``` 
 
 ```bash
-sudo apt install phpmyadmin
+sudo apt install phpmyadmin # Instalamos phpmyadmin
 ls /usr/share/phpmyadmin # Para comprobar que se ha instalado correctamente
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin # Creamos un enlace simbolico para asi poder acceder desde el navegador
 sudo systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
@@ -141,12 +141,12 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpm
 ---
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 ```bash
-cd /tmp
-wget https://wordpress.org/latest.tar.gz
-tar -xvzf latest.tar.gz
-sudo cp -a wordpress /var/www/html/
-sudo chown -R www-data:www-data /var/www/html/wordpress
-sudo chmod -R 755 /var/www/html/wordpress
+cd /tmp # Nos movemos a la carpeta temporal
+wget https://wordpress.org/latest.tar.gz # Descargamos la ultima version de wordpress
+tar -xvzf latest.tar.gz # Descomprimimos el archivo
+sudo cp -a wordpress /var/www/html/ # Copiamos la carpeta de wordpress a la carpeta raiz de apache
+sudo chown -R www-data:www-data /var/www/html/wordpress # Cambiamos el propietario de la carpeta a www-data
+sudo chmod -R 755 /var/www/html/wordpress # Cambiamos los permisos de la carpeta
 ```
 
 ### Separamos su configuracion en dos partes para que sea mas facil de entender
@@ -159,12 +159,12 @@ sudo chmod -R 755 /var/www/html/wordpress
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
-sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php
+sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php # Copiamos el archivo de configuracion de ejemplo
 sudo nano /var/www/html/wordpress/wp-config.php # Editamos el archivo de configuracion
-define('DB_NAME', 'wordpress');
-define('DB_USER', 'usuario_wp');
-define('DB_PASSWORD', 'tu_contraseña_segura');
-define('DB_HOST', 'localhost');
+define('DB_NAME', 'wordpress'); # Nombre de la base de datos
+define('DB_USER', 'usuario_wp'); # Usuario de la base de datos
+define('DB_PASSWORD', 'tu_contraseña_segura'); # Contraseña del usuario de la base de datos
+define('DB_HOST', 'localhost'); # Host de la base de datos
 ```
 Guardamos y salimos con ctrl + x y luego Y
 Escribimos los datos de la base de datos que hemos creado antes
