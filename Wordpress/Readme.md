@@ -44,7 +44,7 @@ Escribe en el navegador para asi comprobar si funciona: http://localhost
 -----------------------------
 🎥 **¿Prefieres verlo en acción?**  
 
-[![Miniatura del video](https://img.youtube.com/vi/TYBH9TrAVuQ)](https://youtu.be/TYBH9TrAVuQ)
+[![Miniatura del video](https://img.youtube.com/vi/TYBH9TrAVuQ/0.jpg)](https://youtu.be/TYBH9TrAVuQ)
 
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 
