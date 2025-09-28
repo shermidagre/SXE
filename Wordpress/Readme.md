@@ -16,7 +16,7 @@ Requisitos previos
 - Acceso a la terminal o SSH.
 
 ----------------------------
-# En caso de que no tengas nada instalado(apache, php o mysql), sigue estos pasos, para asi poder tener lo minimo:
+## En caso de que no tengas nada instalado(apache, php o mysql), sigue estos pasos, para asi poder tener lo minimo:
 -----------------------------
 ## Paso 1: Instalar Apache como servidor web
 -----------------------------
@@ -129,7 +129,6 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpm
 
 -----------------------------
 # Ya tienes lo minimo para instalar WordPress
------------------------------
 
 -----------------------------
 ## Paso 5: Descargar e instalar WordPress
