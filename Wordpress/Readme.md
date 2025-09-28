@@ -21,10 +21,6 @@ Requisitos previos
 ## Paso 1: Instalar Apache como servidor web
 -----------------------------
 
----
-
-🎥 **¿Prefieres verlo en acción?** 
-
 [![Miniatura del video](https://img.youtube.com/vi/OJctgGheJWM/0.jpg)](https://youtu.be/OJctgGheJWM)
 
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
@@ -42,7 +38,7 @@ Escribe en el navegador para asi comprobar si funciona: http://localhost
 -----------------------------
 ## Paso 2: Instalar mysql como servidor de base de datos
 -----------------------------
-🎥 **¿Prefieres verlo en acción?**  
+
 
 [![Miniatura del video](https://img.youtube.com/vi/TYBH9TrAVuQ/0.jpg)](https://youtu.be/TYBH9TrAVuQ)
 
@@ -64,6 +60,9 @@ sudo systemctl restart mysql
 
 [![Miniatura del video](https://img.youtube.com/vi/ynWNmDkDOHQ/0.jpg)](https://youtu.be/ynWNmDkDOHQ)
 
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
@@ -87,6 +86,11 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/info
 
 [![Miniatura del video](https://img.youtube.com/vi/T_JIIF7DvOM/0.jpg)](https://youtu.be/T_JIIF7DvOM)
 
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
+### Si quieres hacerlo sin video, aqui tienes los comandos:
 ```bash
 sudo mysql_secure_installation
 ```
@@ -133,6 +137,10 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpm
 
 [![Miniatura del video](https://img.youtube.com/vi/rCi40_MIWpc/0.jpg)](https://youtu.be/rCi40_MIWpc)
 
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
+### Si quieres hacerlo sin video, aqui tienes los comandos:
 ```bash
 cd /tmp
 wget https://wordpress.org/latest.tar.gz
@@ -146,6 +154,9 @@ sudo chmod -R 755 /var/www/html/wordpress
 
 [![Miniatura del video](https://img.youtube.com/vi/NDX1tocnHxY/0.jpg)](https://youtu.be/NDX1tocnHxY)
 
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
