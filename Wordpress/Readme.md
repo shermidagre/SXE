@@ -71,7 +71,7 @@ sudo apt update && sudo apt upgrade
 sudo apt install php libapache2-mod-php
 sudo systemctl restart apache2
 sudo systemctl status apache2
-sudo nano /var/www/html/info.php para asi poder abrir el archivo y escribir 
+sudo nano /var/www/html/info.php # Para asi poder abrir el archivo y escribir 
 ```
 Aqui dentro del archivo escribimos: Prueba<?php phpinfo();?> 
 
@@ -114,7 +114,7 @@ FLUSH PRIVILEGES;
 
 ```bash
 sudo apt install phpmyadmin
-ls /usr/share/phpmyadmin #para comprobar que se ha instalado correctamente
+ls /usr/share/phpmyadmin # Para comprobar que se ha instalado correctamente
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin # Creamos un enlace simbolico para asi poder acceder desde el navegador
 sudo systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
 ls -l /var/www/html/phpmyadmin # Comprobar que se ha creado el enlace simbolico
@@ -166,9 +166,9 @@ agregamos las lineas que nos ha dado curl en el archivo de configuracion
 ```bash
 systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
 ```
-Y con los siguientes pasos terminamos la instalacion desde el navegador
-Abrimos el navegador y escribimos: http://localhost/wordpress
-Seleccionamos el idioma y le damos a continuar
-Rellenamos los campos del formulario y le damos a instalar wordpress
+Y con los siguientes pasos terminamos la instalacion desde el navegador.
+Abrimos el navegador y escribimos: http://localhost/wordpress.
+Seleccionamos el idioma y le damos a continuar.
+Rellenamos los campos del formulario y le damos a instalar wordpress.
 Una vez instalado, nos va a pedir que iniciemos sesion, ponemos el usuario y la contraseña que hemos puesto antes
 ```
