@@ -21,7 +21,7 @@ Requisitos previos
 ## Paso 1: Instalar Apache como servidor web
 -----------------------------
 
-![intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4](videos/intalar-apache-hecho-con-clipchamp-1759055789326_kYYtI3jF.mp4)
+[Ver video](https://youtu.be/OJctgGheJWM)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
