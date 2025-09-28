@@ -21,7 +21,15 @@ Requisitos previos
 ## Paso 1: Instalar Apache como servidor web
 -----------------------------
 
-[Ver video](https://youtu.be/OJctgGheJWM)
+---
+
+🎥 **¿Prefieres verlo en acción?** 
+
+[![Miniatura del video](https://img.youtube.com/vi/OJctgGheJWM/0.jpg)](https://youtu.be/OJctgGheJWM)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -34,8 +42,13 @@ Escribe en el navegador para asi comprobar si funciona: http://localhost
 -----------------------------
 ## Paso 2: Instalar mysql como servidor de base de datos
 -----------------------------
+🎥 **¿Prefieres verlo en acción?**  
 
-![Instalar mysql - Hecho con Clipchamp_1759056236552(1).mp4](Videos/Instalar%20mysql%20-%20Hecho%20con%20Clipchamp_1759056236552%281%29.mp4)
+[![Miniatura del video](https://img.youtube.com/vi/TYBH9TrAVuQ)](https://youtu.be/TYBH9TrAVuQ)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -49,7 +62,7 @@ sudo systemctl restart mysql
 ## Paso 3: Instalar php para interpretar lenguajes de script
 -----------------------------
 
-![Instalar php - Hecho con Clipchamp_1759055070293(1).mp4](Videos/Instalar%20php%20-%20Hecho%20con%20Clipchamp_1759055070293%281%29.mp4)
+![Ver video](https://youtu.be/ynWNmDkDOHQ)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -68,41 +81,53 @@ Escribimos en el navegador para asi comprobar si funciona: http://localhost/info
 ## Paso 4: Instalar phpMyAdmin como interfaz grafica para gestionar MySQL
 -----------------------------
 
-![instalar phpmyadmin - Hecho con Clipchamp_1759056482327(1).mp4](Videos/instalar%20phpmyadmin%20-%20Hecho%20con%20Clipchamp_1759056482327%281%29.mp4)
+[Ver video](https://youtu.be/T_JIIF7DvOM)
 
 ```bash
 sudo mysql_secure_installation
+```
 Aqui seguimos los pasos que nos indica, en el primero ponemos un 1 para establecer una contraseña de root
 Despues de esto, nos va a pedir que pongamos una contraseña, la ponemos y la confirmamos
 Despues nos va a hacer una serie de preguntas, a todas respondemos con algo random para skippearlas
+
+```bash
 sudo mysql -u root -p
+```
+
 Aqui nos va a pedir la contraseña que hemos puesto antes, la ponemos y entramos
 Creamos la base de datos para wordpress:
+
+```bash
 CREATE DATABASE wordpress;
+```
 Creamos un usuario y le damos permisos a la base de datos que acabamos de crear:
+```bash
 CREATE USER 'usuario_wp'@'localhost' IDENTIFIED BY 'tu_contraseña_segura';
 GRANT ALL PRIVILEGES ON wordpress.* TO 'usuario_wp'@'localhost';
 FLUSH PRIVILEGES;
-\q para salir de mysql
+\q #para salir de mysql
+``` 
+
+```bash
 sudo apt install phpmyadmin
-ls /usr/share/phpmyadmin para comprobar que se ha instalado correctamente
+ls /usr/share/phpmyadmin #para comprobar que se ha instalado correctamente
 sudo ln -s /usr/share/phpmyadmin /var/www/html/phpmyadmin # Creamos un enlace simbolico para asi poder acceder desde el navegador
 sudo systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
-ls -l /var/www/html/phpmyadmin para comprobar que se ha creado el enlace simbolico
+ls -l /var/www/html/phpmyadmin # Comprobar que se ha creado el enlace simbolico
+``` 
 Aqui nos va a pedir que seleccionemos el servidor web, seleccionamos apache2 
 Despues nos va a pedir que configuremos la base de datos para phpmyadmin, seleccionamos que no para asi editar luego
 Escribimos en el navegador para asi comprobar si funciona: http://localhost/phpmyadmin
-```
+
 -----------------------------
 # Ya tienes lo minimo para instalar WordPress
 -----------------------------
-
 
 -----------------------------
 ## Paso 5: Descargar e instalar WordPress
 -----------------------------
 
-![configuracion wordpress1 - Hecho con Clipchamp_1759056027531(1).mp4](Videos/configuracion%20wordpress1%20-%20Hecho%20con%20Clipchamp_1759056027531%281%29.mp4)
+[Ver](https://youtu.be/rCi40_MIWpc)
 
 ```bash
 cd /tmp
@@ -115,7 +140,7 @@ sudo chmod -R 755 /var/www/html/wordpress
 
 ### Separamos su configuracion en dos partes para que sea mas facil de entender
 
-![configuracion wordpress2 - Hecho con Clipchamp_1759055294187(1).mp4](Videos/configuracion%20wordpress2%20-%20Hecho%20con%20Clipchamp_1759055294187%281%29.mp4)
+[Ver video](https://youtu.be/NDX1tocnHxY)
 
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
@@ -126,12 +151,17 @@ define('DB_NAME', 'wordpress');
 define('DB_USER', 'usuario_wp');
 define('DB_PASSWORD', 'tu_contraseña_segura');
 define('DB_HOST', 'localhost');
+```
 Guardamos y salimos con ctrl + x y luego Y
 Escribimos los datos de la base de datos que hemos creado antes
+```bash
 sudo snap install curl # Instalamos curl si no lo tenemos
 curl -s https://api.wordpress.org/secret-key/1.1/salt/ # Copiamos las lineas que nos da y las pegamos en el archivo de configuracion, reemplazando las que ya hay
+```
 agregamos las lineas que nos ha dado curl en el archivo de configuracion
+```bash
 systemctl restart apache2 # Reiniciamos apache2 para que tome los cambios
+```
 Y con los siguientes pasos terminamos la instalacion desde el navegador
 Abrimos el navegador y escribimos: http://localhost/wordpress
 Seleccionamos el idioma y le damos a continuar
