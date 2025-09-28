@@ -21,7 +21,7 @@ Requisitos previos
 -------------------
 # Paso 2: Crear un medio de instalación USB
 -------------------
-1. Descarga e instala una herramienta para crear medios de instalación USB, como Rufus (https://rufus.ie/) para Windows o balenaEtcher (https://www.balena
+1. Descarga e instala una herramienta para crear medios de instalación USB, como Rufus (https://rufus.ie/) para Windows o balenaEtcher (https://www.balena/)
 2. Inserta la unidad USB en la computadora.
 3. Abre la herramienta de creación de medios USB.
 4. Selecciona la imagen ISO de Ubuntu que descargaste.
