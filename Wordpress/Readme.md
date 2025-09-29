@@ -159,7 +159,7 @@ sudo chmod -R 755 /var/www/html/wordpress # Cambiamos los permisos de la carpeta
 ### Si quieres hacerlo sin video, aqui tienes los comandos:
 
 ```bash
-sudo cp /var/www/html/wp-config-sample.php /var/www/html/wp-config.php # Copiamos el archivo de configuracion de ejemplo
+sudo cp /var/www/html/wordpress/wp-config-sample.php /var/www/html/wordpress/wp-config.php # Copiamos el archivo de configuracion de ejemplo
 sudo nano /var/www/html/wordpress/wp-config.php # Editamos el archivo de configuracion
 define('DB_NAME', 'wordpress'); # Nombre de la base de datos
 define('DB_USER', 'usuario_wp'); # Usuario de la base de datos
