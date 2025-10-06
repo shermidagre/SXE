@@ -36,8 +36,13 @@ El comando `docker pull alpine` descarga la imagen oficial de Alpine desde Docke
 
 ### Video:
 
-[3.webm](Media/3.webm)
+-----------------------------
 
+[![Miniatura del video](https://img.youtube.com/vi/UyrqI_LYF7M/0.jpg)](https://youtu.be/UyrqI_LYF7M)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Comandos:
 ```bash
@@ -54,8 +59,17 @@ Al ejecutar `docker create -it  alpine`, se crea un contenedor con imagen alpine
 
 ### Video:
 
-[3.webm](Media/3.webm)
-[3-4.webm](Media/3-4.webm)
+-----------------------------
+
+[![Miniatura del video](https://img.youtube.com/vi/UyrqI_LYF7M/0.jpg)](https://youtu.be/UyrqI_LYF7M)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+[![Miniatura del video](https://img.youtube.com/vi/CLnaZkrQTWM/0.jpg)](https://youtu.be/CLnaZkrQTWM)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Comandos:
 ```bash
@@ -71,7 +85,14 @@ Al ejecutar `docker create -it --name dam_alp1 alpine`, se crea un contenedor co
 
 ### Video:
 
-[3-4.webm](Media/3-4.webm)
+-----------------------------
+
+[![Miniatura del video](https://img.youtube.com/vi/_VaOfJrHE9I/0.jpg)](https://youtu.be/_VaOfJrHE9I)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
+
 
 ### Comandos:
 ```bash
@@ -91,15 +112,22 @@ El ping a `google.com` comprueba conectividad a internet.
 
 ### Video:
 
-[crear dam2.webm](Media/crear%20dam2.webm)
+-----------------------------
 
-[ping contenedor al otro.webm](Media/ping%20contenedor%20al%20otro.webm)
+[![Miniatura del video](https://img.youtube.com/vi/8EOCM_wa2lA/0.jpg)](https://youtu.be/8EOCM_wa2lA)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+[![Miniatura del video](https://img.youtube.com/vi/ySYqXAYOTA0/0.jpg)](https://youtu.be/ySYqXAYOTA0)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+---
+
 
 ### Comandos:
 ```bash
 
 docker create -it --name dam_alp2 alpine
-docker start dam_alp2
 docker exec -it dam_alp2 sh
 
 (En la consola que ya tenias abierta de dam_alp1, escribe ip a, de ahi cogeras la ip de dam_alp1)
@@ -117,7 +145,13 @@ Al hacer ping desde `dam_alp2` a la IP de `dam_alp1`, verificamos esta conectivi
 
 ### Video:
 
-[exit.webm](Media/exit.webm)
+-----------------------------
+
+[![Miniatura del video](https://img.youtube.com/vi/PXJOUUilMAo/0.jpg)](https://youtu.be/PXJOUUilMAo)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Observación:
 
@@ -128,9 +162,13 @@ Cuando sales del terminal del contenedor con `exit`, y el contenedor no se detie
 ## Paso 7: ¿Cuánta memoria en el disco duro ocupaste?
 -----------------------------
 
-### Video:
+-----------------------------
 
-[memoria ram y memoria total.webm](Media/memoria%20ram%20y%20memoria%20total.webm)
+[![Miniatura del video](https://img.youtube.com/vi/SdQIEwqcrZk/0.jpg)](https://youtu.be/SdQIEwqcrZk)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Comandos:
 ```bash
@@ -152,7 +190,13 @@ La imagen de Alpine ocupa **menos de 10 MB**, y los contenedores apenas añaden 
 
 ### Video:
 
-[memoria ram y memoria total.webm](Media/memoria%20ram%20y%20memoria%20total.webm)
+-----------------------------
+
+[![Miniatura del video](https://img.youtube.com/vi/SdQIEwqcrZk/0.jpg)](https://youtu.be/SdQIEwqcrZk)
+
+> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
+---
 
 ### Comandos:
 ```bash
