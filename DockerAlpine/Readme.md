@@ -174,8 +174,7 @@ docker stats --no-stream
 ```
 
 ### Descripción:
-`docker stats` muestra en tiempo real el uso de CPU, RAM, red y E/S de todos los contenedores en ejecución.  
-Alpine, al ser muy ligero, suele consumir **menos de 2 MB de RAM** cuando está inactivo.
+`docker stats` muestra en tiempo real el uso de CPU, RAM, red y E/S de todos los contenedores en ejecución
 
 -----------------------------
 
