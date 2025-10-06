@@ -19,7 +19,7 @@ Requisitos previos
 
 ### Imagen:
 
-![2(1).png](Fotos/2%281%29.png)
+![2(1).png](Media/2%281%29.png)
 
 ### Comandos:
 ```bash
@@ -36,7 +36,7 @@ El comando `docker pull alpine` descarga la imagen oficial de Alpine desde Docke
 
 ### Video:
 
-[3.webm](Fotos/3.webm)
+[3.webm](Media/3.webm)
 
 
 ### Comandos:
@@ -54,8 +54,8 @@ Al ejecutar `docker create -it  alpine`, se crea un contenedor con imagen alpine
 
 ### Video:
 
-[3.webm](Fotos/3.webm)
-[3-4.webm](Fotos/3-4.webm)
+[3.webm](Media/3.webm)
+[3-4.webm](Media/3-4.webm)
 
 ### Comandos:
 ```bash
@@ -71,7 +71,7 @@ Al ejecutar `docker create -it --name dam_alp1 alpine`, se crea un contenedor co
 
 ### Video:
 
-[3-4.webm](Fotos/3-4.webm)
+[3-4.webm](Media/3-4.webm)
 
 ### Comandos:
 ```bash
@@ -91,9 +91,9 @@ El ping a `google.com` comprueba conectividad a internet.
 
 ### Video:
 
-[crear dam2.webm](Fotos/crear%20dam2.webm)
+[crear dam2.webm](Media/crear%20dam2.webm)
 
-[ping contenedor al otro.webm](Fotos/ping%20contenedor%20al%20otro.webm)
+[ping contenedor al otro.webm](Media/ping%20contenedor%20al%20otro.webm)
 
 ### Comandos:
 ```bash
@@ -117,7 +117,7 @@ Al hacer ping desde `dam_alp2` a la IP de `dam_alp1`, verificamos esta conectivi
 
 ### Video:
 
-[exit.webm](Fotos/exit.webm)
+[exit.webm](Media/exit.webm)
 
 ### Observación:
 
@@ -130,7 +130,7 @@ Cuando sales del terminal del contenedor con `exit`, y el contenedor no se detie
 
 ### Video:
 
-[memoria ram y memoria total.webm](Fotos/memoria%20ram%20y%20memoria%20total.webm)
+[memoria ram y memoria total.webm](Media/memoria%20ram%20y%20memoria%20total.webm)
 
 ### Comandos:
 ```bash
@@ -152,7 +152,7 @@ La imagen de Alpine ocupa **menos de 10 MB**, y los contenedores apenas añaden 
 
 ### Video:
 
-[memoria ram y memoria total.webm](Fotos/memoria%20ram%20y%20memoria%20total.webm)
+[memoria ram y memoria total.webm](Media/memoria%20ram%20y%20memoria%20total.webm)
 
 ### Comandos:
 ```bash
