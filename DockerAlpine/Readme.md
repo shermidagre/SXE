@@ -158,8 +158,6 @@ El comando `docker system df` muestra el espacio en disco usado por:
 - Volúmenes
 - Cache
 
-La imagen de Alpine ocupa **menos de 10 MB**, y los contenedores apenas añaden sobrecarga si no almacenan datos.
-
 -----------------------------
 ## Paso 8: ¿Cuánta RAM ocupan los contenedores? ¿Hay algún comando Docker para saber esto?
 -----------------------------
