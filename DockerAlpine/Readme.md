@@ -17,8 +17,6 @@ Requisitos previos
 ## Paso 1: Descargar la imagen "alpine" SIN ARRANCARLA y comprobar que está en tu equipo
 -----------------------------
 
-### Imagen:
-
 ![2(1).png](Media/2%281%29.png)
 
 ### Comandos:
@@ -32,10 +30,6 @@ El comando `docker pull alpine` descarga la imagen oficial de Alpine desde Docke
 
 -----------------------------
 ## Paso 2: Crear un contenedor sin ponerle nombre. ¿Está arrancado? Obtén el nombre
------------------------------
-
-### Video:
-
 -----------------------------
 
 [![Miniatura del video](https://img.youtube.com/vi/UyrqI_LYF7M/0.jpg)](https://youtu.be/UyrqI_LYF7M)
@@ -55,10 +49,6 @@ Al ejecutar `docker create -it  alpine`, se crea un contenedor con imagen alpine
 
 -----------------------------
 ## Paso 3: Crear un contenedor con el nombre 'dam_alp1'. ¿Cómo puedes acceder a él?
------------------------------
-
-### Video:
-
 -----------------------------
 
 [![Miniatura del video](https://img.youtube.com/vi/UyrqI_LYF7M/0.jpg)](https://youtu.be/UyrqI_LYF7M)
@@ -83,10 +73,6 @@ Al ejecutar `docker create -it --name dam_alp1 alpine`, se crea un contenedor co
 ## Paso 4: Comprobar qué IP tiene y si puedes hacer un ping a google.com
 -----------------------------
 
-### Video:
-
------------------------------
-
 [![Miniatura del video](https://img.youtube.com/vi/_VaOfJrHE9I/0.jpg)](https://youtu.be/_VaOfJrHE9I)
 
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
@@ -108,10 +94,6 @@ El ping a `google.com` comprueba conectividad a internet.
 
 -----------------------------
 ## Paso 5: Crear un contenedor con el nombre 'dam_alp2'. ¿Puedes hacer ping entre los contenedores?
------------------------------
-
-### Video:
-
 -----------------------------
 
 [![Miniatura del video](https://img.youtube.com/vi/8EOCM_wa2lA/0.jpg)](https://youtu.be/8EOCM_wa2lA)
@@ -143,10 +125,6 @@ Al hacer ping desde `dam_alp2` a la IP de `dam_alp1`, verificamos esta conectivi
 ## Paso 6: Sal del terminal, ¿qué ocurrió con el contenedor?
 -----------------------------
 
-### Video:
-
------------------------------
-
 [![Miniatura del video](https://img.youtube.com/vi/PXJOUUilMAo/0.jpg)](https://youtu.be/PXJOUUilMAo)
 
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
@@ -160,8 +138,6 @@ Cuando sales del terminal del contenedor con `exit`, y el contenedor no se detie
 
 -----------------------------
 ## Paso 7: ¿Cuánta memoria en el disco duro ocupaste?
------------------------------
-
 -----------------------------
 
 [![Miniatura del video](https://img.youtube.com/vi/SdQIEwqcrZk/0.jpg)](https://youtu.be/SdQIEwqcrZk)
@@ -186,10 +162,6 @@ La imagen de Alpine ocupa **menos de 10 MB**, y los contenedores apenas añaden 
 
 -----------------------------
 ## Paso 8: ¿Cuánta RAM ocupan los contenedores? ¿Hay algún comando Docker para saber esto?
------------------------------
-
-### Video:
-
 -----------------------------
 
 [![Miniatura del video](https://img.youtube.com/vi/SdQIEwqcrZk/0.jpg)](https://youtu.be/SdQIEwqcrZk)
