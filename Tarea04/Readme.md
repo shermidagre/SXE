@@ -1,4 +1,3 @@
-Claro, aquí tienes el contenido adaptado al formato que solicitaste, enfocado en la **práctica con Docker y Apache**, y estructurado como un archivo `Readme.md` en **Markdown**:
 
 ---
 
@@ -72,7 +71,7 @@ Esto muestra la imagen `httpd` con la etiqueta `2.4` en la lista local.
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
 
----
+
 
 ### 5. Realiza un 'hola mundo' en HTML y comprueba que accedes desde el navegador.
 
@@ -86,7 +85,6 @@ Esto muestra la imagen `httpd` con la etiqueta `2.4` en la lista local.
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
 
----
 
 ### 6. Crea otro contenedor 'dam_web2' con el mismo bind mount y en otro puerto (ej. 9080).
 
