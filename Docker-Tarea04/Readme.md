@@ -53,7 +53,6 @@ docker exec -it dam_web1 sh
 ---
 
 
----
 
 ## Los pasos 4 y 5 estan en el mismo video
 
@@ -95,6 +94,8 @@ docker create -p 9080:80 -v  C:\Userrs\samue\Documents\Dam2\SXE\Docker-Tarea04\s
 ### 8. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página.
 
 **Video**:
+
 [![Miniatura del video](https://img.youtube.com/vi/1DNhh_65DKI/0.jpg)](https://youtu.be/1DNhh_65DKI)
+
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
