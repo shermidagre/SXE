@@ -8,82 +8,77 @@ Este documento describe los pasos realizados para configurar dos contenedores de
 ---
 
 
+## Los pasos 1 y 2 en el mismo video
 
 ### 1. Descarga la imagen 'httpd' y comprueba que está en tu equipo.
-
-**Comando:**
-```bash
-docker pull httpd:2.4
-```
----
-**Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
-> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
----
-
-Esto muestra la imagen `httpd` con la etiqueta `2.4` en la lista local.
-
----
-
-
 
 ### 2. Crea un contenedor con el nombre 'dam_web1'.
 
 **Comando:**
 ```bash
 
+docker create --name dam_web httpd:2.4
+
+docker images
+docker ps -a 
 
 ```
 ---
+
 **Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
+
+[![Miniatura del video](https://img.youtube.com/vi/czanQGPz53k/0.jpg)](https://youtu.be/czanQGPz53k)
+
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
 
-
----
 
 ### 3. Si quieres poder acceder desde el navegador de tu equipo, ¿qué debes hacer?
 
 
-
+**Comando:**
 ```bash
 
+docker start dam_web1
+docker exec -it dam_web1 sh
+
 ```
+
 ---
 **Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
+
+[![Miniatura del video](https://img.youtube.com/vi/438rsUtOuTw/0.jpg)](https://youtu.be/438rsUtOuTw)
+
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
 
 
 ---
+
+## Los pasos 4 y 5 estan en el mismo video
 
 ### 4. Utiliza bind mount para que el directorio del Apache 'htdocs' esté montado en un directorio que tú elijas.
 
-
+**Comando:**
 ```bash
+docker create -p 8000:80 -v  C:\Userrs\samue\Documents\Dam2\SXE\Docker-Tarea04\src:/usr/local/apache2/hdocs --name secondone httpd
 
 ```
----
-**Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
-> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
----
-
-
 
 ### 5. Realiza un 'hola mundo' en HTML y comprueba que accedes desde el navegador.
 
-
-```bash
-```
-
 ---
+
 **Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
+
+[![Miniatura del video](https://img.youtube.com/vi/7PeQxfycCaM/0.jpg)](https://youtu.be/7PeQxfycCaM)
+
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
+
 ---
+
+
+## Los pasos 6 7 y 8 estan en el mismo video
 
 
 ### 6. Crea otro contenedor 'dam_web2' con el mismo bind mount y en otro puerto (ej. 9080).
@@ -91,33 +86,15 @@ Esto muestra la imagen `httpd` con la etiqueta `2.4` en la lista local.
 **Comando:**
 
 ```bash
+docker create -p 9080:80 -v  C:\Userrs\samue\Documents\Dam2\SXE\Docker-Tarea04\src:/usr/local/apache2/hdocs --name secondone httpd
 
 ```
-
----
-**Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
-> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
----
-
----
 
 ### 7. Comprueba que los dos servidores 'sirven' la misma página.
 
----
-**Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
-> 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
----
-
----
-
 ### 8. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página.
 
-```bash
-```
----
 **Video**:
-[![Miniatura del video](https://img.youtube.com/vi/5n6v1jvXG7o/0.jpg)](https://youtu.be/5n6v1jvXG7o)
+[![Miniatura del video](https://img.youtube.com/vi/1DNhh_65DKI/0.jpg)](https://youtu.be/1DNhh_65DKI)
 > 💡 Haz clic en la imagen para abrir el tutorial en YouTube.
 ---
