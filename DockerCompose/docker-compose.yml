@@ -20,9 +20,9 @@ services:
       - "8080:80"
     environment:
       DB_SERVER: db
-      DB_NAME: prestashop
-      DB_USER: prestashop
-      DB_PASSWD: prestashoppass
+      DB_NAME: samuel
+      DB_USER: samuel
+      DB_PASSWD: samuelpass
       PS_INSTALL_AUTO: 1
       PS_DEV_MODE: 1
       PS_DOMAIN: localhost:8080
